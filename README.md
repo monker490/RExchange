@@ -1,5 +1,5 @@
+HEAD
 Yii 2 Advanced Project Template
-===============================
 
 Yii 2 Advanced Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
 developing complex Web applications with multiple tiers.
@@ -53,3 +53,6 @@ frontend
 vendor/                  contains dependent 3rd-party packages
 environments/            contains environment-based overrides
 ```
+=======
+# RExchange
+>>>>>>> d3fad7e16e8e7339e954c220847525b999f09055
