@@ -13,24 +13,26 @@ use yii\filters\auth\HttpBasicAuth;
  *
  * @Author Arslan
  */
+ 
+/*
+GET /vehicles: list all vehicles
+HEAD /vehicles: show the overview information of vehicle listing
+POST /vehicles: create a new vehicle
+GET /vehicles/12345: return the details of the vehicle 12345
+HEAD /vehicles/12345: show the overview information of vehicle 12345
+PATCH /vehicles/12345: update the vehicle 12345
+PUT /vehicles/12345: update the vehicle 12345
+DELETE /vehicles/12345: delete the vehicle 12345
+OPTIONS /vehicles: show the supported verbs regarding endpoint /vehicles
+OPTIONS /vehicles/12345: show the supported verbs regarding endpoint /vehicles/12345.
+*/
+
 
 class VehicleController extends ActiveController
 {
     public $modelClass = 'api\modules\v1\models\Vehicle';
 
- // Default actions
- // GET /borrowers: list all borrowers
- // HEAD /borrowers: show the overview information of borrower listing
- // POST /borrowers: create a new borrower
- // GET /borrowers/10001: return the details of the borrower 12345
- // HEAD /borrowers/10001: show the overview information of borrower 12345
- // PATCH /borrowers/10001: update the borrower 12345
- // PUT /borrowers/10001: update the borrower 12345
- // DELETE /borrowers/10001: delete the borrower 12345
- // OPTIONS /borrowers: show the supported verbs regarding endpoint /borrowers
- // OPTIONS /borrowers/10001: show the supported verbs regarding endpoint /borrowers/12345.
-
-	public function actions()
+ 	public function actions()
 	{
         $actions = parent::actions();
 		// Possibility to unset default actions

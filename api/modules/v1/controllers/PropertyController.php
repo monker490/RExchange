@@ -14,23 +14,24 @@ use yii\filters\auth\HttpBasicAuth;
  * @Author Arslan
  */
 
+/*
+GET /propertys: list all propertys
+HEAD /propertys: show the overview information of property listing
+POST /propertys: create a new property
+GET /propertys/12345: return the details of the property 12345
+HEAD /propertys/12345: show the overview information of property 12345
+PATCH /propertys/12345: update the property 12345
+PUT /propertys/12345: update the property 12345
+DELETE /propertys/12345: delete the property 12345
+OPTIONS /propertys: show the supported verbs regarding endpoint /propertys
+OPTIONS /propertys/12345: show the supported verbs regarding endpoint /propertys/12345.
+*/
+
 class PropertyController extends ActiveController
 {
     public $modelClass = 'api\modules\v1\models\Property';
 
- // Default actions
- // GET /borrowers: list all borrowers
- // HEAD /borrowers: show the overview information of borrower listing
- // POST /borrowers: create a new borrower
- // GET /borrowers/10001: return the details of the borrower 12345
- // HEAD /borrowers/10001: show the overview information of borrower 12345
- // PATCH /borrowers/10001: update the borrower 12345
- // PUT /borrowers/10001: update the borrower 12345
- // DELETE /borrowers/10001: delete the borrower 12345
- // OPTIONS /borrowers: show the supported verbs regarding endpoint /borrowers
- // OPTIONS /borrowers/10001: show the supported verbs regarding endpoint /borrowers/12345.
-
-	public function actions()
+ 	public function actions()
 	{
         $actions = parent::actions();
 		// Possibility to unset default actions

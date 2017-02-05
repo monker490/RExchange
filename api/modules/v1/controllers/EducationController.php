@@ -13,6 +13,21 @@ use yii\filters\auth\HttpBasicAuth;
  *
  * @Author Arslan
  */
+ 
+ /*
+ 
+GET /educations: list all educations
+HEAD /educations: show the overview information of education listing
+POST /educations: create a new education
+GET /educations/12345: return the details of the education 12345
+HEAD /educations/12345: show the overview information of education 12345
+PATCH /educations/12345: update the education 12345
+PUT /educations/12345: update the education 12345
+DELETE /educations/12345: delete the education 12345
+OPTIONS /educations: show the supported verbs regarding endpoint /educations
+OPTIONS /educations/12345: show the supported verbs regarding endpoint /educations/12345.
+
+*/
 
 class EducationController extends ActiveController
 {

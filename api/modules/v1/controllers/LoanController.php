@@ -19,6 +19,16 @@ use yii\db\Query;
  * @Author Arslan
  */
 
+ /**
+ *	@SWG\Resource(
+ *		apiVersion="1.0"
+ *		resourcePath="/controllers/loans"
+ *		basePath="http://localhost/re/yii2-advanced-api/api/modules/v1/controllers",
+ *		description="Animal operations"
+ *		produces="['application/json']'
+ *	)
+ */
+ 
 class LoanController extends ActiveController
 {
     public $modelClass = 'api\modules\v1\models\Loan';
